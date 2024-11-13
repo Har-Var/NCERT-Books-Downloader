@@ -167,3 +167,5 @@ notes/
 config.py
 backup/
 data/resources/ncert_books_links.json
+data/output/
+data/processing/
