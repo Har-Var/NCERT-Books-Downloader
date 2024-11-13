@@ -4,9 +4,19 @@ from config.config import resources_folder, processing_folder, output_folder
 
 
 def cleanup_folder(folder_path):
-    """Remove all contents of the specified folder."""
+    """Deletes all files and subdirectories in the given folder_path, except for .gitkeep files.
+
+    Args:
+        folder_path (str): The path to the folder to be cleaned up.
+
+    Returns:
+        None
+    """
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
+        # Skip .gitkeep files
+        if filename == '.gitkeep':
+            continue
         try:
             if os.path.isfile(file_path) or os.path.islink(file_path):
                 os.remove(file_path)
