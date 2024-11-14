@@ -241,7 +241,7 @@ def clean_up_directory(directory, keep_file):
     """
     for item in os.listdir(directory):
         item_path = os.path.join(directory, item)
-        if item_path != keep_file:
+        if item_path != keep_file and item!='.gitkeep':
             if os.path.isdir(item_path):
                 shutil.rmtree(item_path)
             else:
