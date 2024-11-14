@@ -31,12 +31,12 @@ def cleanup_data_folders():
     """Clean up all data folders (processing, output, resources).
 
     This function will prompt the user for confirmation before cleaning up the
-    resources folder. The processing and output folders will be cleaned without
+    resources folder. The Downloading(Processing) and Books(Output) folders will be cleaned without
     prompting the user. If the user chooses not to clean up the resources folder,
     it will be skipped.
     """
     # Clean up processing and output folders without prompt
-    print("Cleaning up 'processing' and 'output' folders...")
+    print("Cleaning up 'Downloading' and 'Books' folders...")
     cleanup_folder(processing_folder)
     cleanup_folder(output_folder)
     print("Processing and output folders have been cleaned.\n")
