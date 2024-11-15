@@ -39,12 +39,12 @@ NCERT Books Downloader is a project designed to simplify and improve the process
 ## Usage
 Run the CLI App with:
 ```bash
-python run_cli_app.py
+python src/run_cli_app.py
 ```
 
 Run the GUI App with:
 ```bash
-python run_gui_app.py
+python src/run_gui_app.py
 ```
 
 ## Features
